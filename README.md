@@ -40,3 +40,25 @@ zona de disponibilidad, pensado para que las empresas puedan desplegar su area d
     - IAM groups 
     - IAM roles (usar credenciales mediante roles, es recomendado), hacer que AWS us servicion en tu nombre, cuando se llama a una api se asume un rol.    
 ### 
+## Modulo 2 aws computing
+
+### amazon EC2
+
+que son los AMI amazon machine image
+### Amazon EC2 instance lifecycle
+- amazon EC2 instance types: general purpose, compute optimized, memory optimized, accelerated computing y storage optimized.
+### amazon EC2 Pricing
+
+- AWS free tier
+- saving plans: planes de ahorro que te cobran por un instancia y el tiempo empieza a correr
+- dedicated host: es como reservar un host y no ir cambiando un ip diferente, al usar una licencia que solo se ejecute en un predeterminado lugar
+- reserved instances: puedes reservar instancias por cierto tiempo limitado, lo usas un cierto tiempo y lo que te sobra de tiempo se sigue guardando
+- on-demand instances:
+- spot instances: 
+te dejan instancia micro t2 o  t3 gratuitas mediante 700 horas
+### container services
+ - AWS containers orchestration services
+### Serveless
+- AWS Lambda: se dispara mediante eventos, escala puede atender miles de solicitudes al mismo tiempo, es un servico computacional, se paga por el uso del servicio y no por el tiempo que esta en servicio sino por el uso
+- AWS Fargate
+### Knowledge check
