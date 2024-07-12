@@ -123,3 +123,46 @@ lauching amazon EC2 instance
 creating a VPX and lauching a web application in an Amazon EC2 instance
 
 
+
+# Modulo 4
+
+- AmazonS3 (para examen)
+- 4 tipos de cifrado (para examen)
+### storage types
+- block storage
+- file storage
+- object storage
+#### block storage
+#### file storage
+#### object storage (inmutabilidad )
+
+inmutabilidad es una caracteristica que hace que tu tengas que descomprimir.
+### Amazon file sistem (EFS)
+
+- IAM policy
+- bucket policy
+- S3 block public access
+- Amazon S3 encryption
+
+ACLs se usa para un caso en concreto, metodo antiguo.
+### Amazon s3 storage classes
+
+- Amazon s3 standar
+- Amazon S3 infrequent Access
+- Amazon S3 one zone-infrequent Access
+- Amazon S3 Glacier
+
+    - instant retrival
+    - Flexible retrival
+    - Deep archive
+### Amazon s3 versioning 
+
+un objeto cuando se versiona puede actualizar y se sobrescribe una nueva version y es la que se muestra en la lsta pero puedes observarlo activando todas las versiones. 
+
+EBS
+EFS
+S3
+
+## Laboratorios 
+Introduction to Amazon EC2
+
