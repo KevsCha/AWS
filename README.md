@@ -159,9 +159,62 @@ ACLs se usa para un caso en concreto, metodo antiguo.
 
 un objeto cuando se versiona puede actualizar y se sobrescribe una nueva version y es la que se muestra en la lsta pero puedes observarlo activando todas las versiones. 
 
-EBS
-EFS
-S3
+- EBS
+- EFS
+- S3
+
+# Module 5, Databases
+
+### beneficios de BBDD de AWS
+- Purpose-built
+- Performance at scale
+- Fully managed
+- Secure and highly available
+#### Tipos Database
+- Relacionales -> amazon Aurora, amazon RDS, amazon redshit
+- key-value -> amazon dynamoDB
+- In-memory -> amazon elasticache for memcached, Amazon Elsticache for redis
+- document -> Amazon documentDB
+-  wide column -> Amazon keyspaces
+- Graph 
+- Time series
+- ledger
+
+#### Base de datos Relacionales
+Beneficios:
+
+Complex SQL, Reduced redundancy, Familiarity, ACID principle
+# 
+**Amazon RDS**
+
+### DB instances clases 
+- Standard
+- Memory optimized
+- Birstable Performance
+
+### DB instances storage
+
+- general ssd
+- hdd
+
+### Database backup
+
+Automatic<----Snapshot----> Manual
+
+### Redundancy with Amazon RDS Multi-AZ
+-   Despliegue mediante red replicas, se suben los datos de forma asyncrona
+
+### Conceptos de Aurora | es RDS -> (Examen) 
+
+Motor de despliegue que tiene una compatibilida Mysql(x5 de rendimiento) o postSQL (X3 rendimiento).
+
+cada maquina lleva maquina computacional y tambien tiene su volumen, Aurora funciona con cluster
+
+Se puede montar una replica que son solo de Lectura (read), diferencia -> conmutan por error (si existe un error en la principal) max -> 15 replicas
+
+Replicas de RDS se autoescalan vs aurora 
+
+existe la posibilida de crear aurora multiMaster
 
 ## Laboratorios 
 Introduction to Amazon EC2
