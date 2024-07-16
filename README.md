@@ -219,3 +219,57 @@ existe la posibilida de crear aurora multiMaster
 ## Laboratorios 
 Introduction to Amazon EC2
 
+### Laboratorio
+
+#### introduction to amazon ec2 auto scaling
+
+### (LAB) Developing on AWS - Supplemental Lab Playlist
+### (Course) Digital classroom developing on AWS
+
+Requisitos para developing 
+
+- AWS cloud practitioner Essentials
+- AWS Technical Essentials
+- Bassic 
+
+
+### Accesing AWS services programmatically
+
+
+autentificacion -> Consola (usuario/contraseña) o programatica -> 
+
+(http)
+(SigV4)-> protocolo de acceso es para firmar tu identidad
+IAM, Access Key (ID, Secret)
+
+
+Cliente application
+                                            
+                                          |-----
+AWS managenement--|                       |
+AWS CLI-----------|---Aws REST API -------|-----
+SDKs--------------|                       |
+                                          |-----
+
+
+Herramienta de desarrollos para
+(acceder con SDKs)
+- `python`
+- `.NET`
+- `Java`
+- `C++`
+- `Ruby`
+- `JavaScrip`
+- `GO`
+- `Node JS`
+- `PHP`
+
+### Conectarse a la CLI de AWS
+- `EC2 over SSH/PuTTY`
+- `AWS cloud9`
+- `AWS cloud Shel`
+- `AWS systems manager session`
+
+### Kit de desarrollo y patrones programaticas
+
+### Amazon Q Developer ---ANTES---> Amazon code Whisperer
