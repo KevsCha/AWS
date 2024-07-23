@@ -273,3 +273,81 @@ Herramienta de desarrollos para
 ### Kit de desarrollo y patrones programaticas
 
 ### Amazon Q Developer ---ANTES---> Amazon code Whisperer
+
+# IAM
+
+## [How IAM work](https://online.vitalsource.com/reader/books/200-DODEVA-45-EN-SG-E/pageid/96)
+Casos de uso de IAM
+- asignacion de roles
+- roles entre cuentas
+-
+(movaterm)
+como determinar la politicas aplicables, crear un rol on id,
+
+## Como otorgar permisos IDE / IDE configuration
+
+cognito vs IAM??? contexto: quiero desplegar una app movil o una web que servicio escoger??
+
+### Lab 
+[Lab 1 (Python) - Configure the Development Environment](https://us-east-1.student.classrooms.aws.training/class/9SmATHY6nQ1rBZTHAdWkMV)
+
+### puntos de control
+
+**cifrado de datos**
+
+transito -> Protocolo transito , certificado TLS, Cs3(cloud side encrypton) -> ( VPN )
+
+Repososo
+
+- CSE
+- SSE (servidor-side encrypton)
+
+
+### Amazon s3 store and retrive any amount of data from anywhere
+
+#### Primer tipo de cifrado: 
+- SSE-S3 usa una clave para una region la cual todos los clientes de la region puede utilizar
+- Se comparte la misma clave
+#### Segundo tipo de cifrado: SSE-KMS
+- SSE-KMS(key management service), servicio para la administracion de material criptografico, se puede custodiar claves maestras utilizadas para un cifrado simetrico y asimetrico.
+- KSM encryp, KSM decript y KSM generate data key
+- Una master Key puede ser administrada por el cleinte(tiene coste) o por AWS, esta se encarga de rotarlas(ejemplo 'aws/s3', no tiene un coste).
+- Se paga por llamadas a la api
+- cifra 4kb (data key)
+- Habilitar bucket key
+#### Tercer tipo de cifrado:  DSSE-KMS
+- 
+#### Cuarto tipo de cifrado:  
+- Cifrado del lado del servidor de doble capa
+#### Quinto tipo de cifrado:  SSE-C
+- AWS no tiene la custodia de  la Key
+- El cliente tiene control sobre la Key (custodia on-promiese)
+- Utiliza el protocolo htttps
+- Se hace un get desde la app  a S3 para encriptar los ficheros
+
+### Caracteristicas de S3
+
+- Transfer acceleration, se utiliza para cargar objetos en la ubicacion de borde (edge-location) mas cercana las cuales son puntos donde al llegar la informacion los datos se envian por la red privada de AWS
+-  Object Lock, se habilita a nuvel de bucket con una politica de acceso WORM, Requiere que el objeto este versionado o creado, una vez realizado no se puede cambiar, se puede habli  la retencion y se puede hababilitar 2 modos, **Governance** o **Compliance**, bloquea la eliminacion de buckets, se define un periodo de retencion.
+- bloqueo de bucket (legalbold) 
+
+### CORS 
+- S3 nos permite validar las politicas de CORS 
+- Entre dominio diferentes, entre mismos dominios no funciona
+- Lo implementa los navegadores web
+### como interactuar mediante la CLI
+
+### Interacting with Amazon S3 through SDKs
+1. Configure Amazon S3 settings for the SDK.
+2. Define dependencies. 
+3. Create an S3 client (service reference) to make service requests.
+4. Perform operations.
+5. Close the S3 client connection.
+
+### Conocer a profundidad para el examen
+
+dynamodb
+lamda
+cognito
+s3
+IAM
