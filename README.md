@@ -351,3 +351,21 @@ lamda
 cognito
 s3
 IAM
+
+# AWS
+
+## 
+
+## Bulk operations
+
+## Host a static website
+
+#### *Cors*
+
+## Lab 2 Develop solution using amazon S3 -> del profe
+### Pregunta: como evitar que un usuario se conecte a un punto de acceso publico?? 
+R. OAC o OAI son usuarios canonicos que pueden utilizarce en la politicas de bucket
+## CloudWatch
+
+Ejecutar logica en el borde, solucion WAF, para tener un dominio que conecte con https se debe tener una TLS y para la TLS se debe tener ACM(Permite administra los certificados TLS)
+
